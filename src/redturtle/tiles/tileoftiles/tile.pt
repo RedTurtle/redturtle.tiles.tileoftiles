@@ -1,0 +1,12 @@
+<div tal:attributes="class view/data/css_class"
+     tal:define="title view/data/title|nothing">
+    <div class="tile-container" 
+         tal:attributes="style view/get_bg_style">
+      <h3 class="tileTitle" tal:condition="python: title">${view/data/title}</h3>
+      <div class="pat-tiles-management"
+           tal:define="managerId view/id;
+                       managerId python: 'managerId_' + managerId"
+           data-pat-tiles-management="managerId:${managerId}" />
+    </div>
+</div>
+
