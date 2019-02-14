@@ -1,4 +1,4 @@
-<div tal:attributes="class view/data/css_class"
+<div tal:attributes="class python:view.data['css_class'] + ' tiles_of_tiles'"
      tal:define="title view/data/title|nothing">
     <div class="tile-container" 
          tal:attributes="style view/get_bg_style">

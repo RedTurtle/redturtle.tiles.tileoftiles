@@ -5,8 +5,9 @@ from plone.supermodel import model
 from zope import schema
 from plone.namedfile.field import NamedBlobFile
 from redturtle.tiles.tileoftiles import _
+from redturtle.tiles.management.interfaces import IRedturtleTilesManagementLayer
 
-class IRedturtleTilesTileoftilesLayer(IDefaultBrowserLayer):
+class IRedturtleTilesTileoftilesLayer(IRedturtleTilesManagementLayer):
     """Marker interface that defines a browser layer."""
 
 

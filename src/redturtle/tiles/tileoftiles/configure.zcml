@@ -53,6 +53,11 @@
       for="*"
       />
 
-  <!-- -*- extra stuff goes here -*- -->
+  <subscriber
+    for="plone.tiles.interfaces.ITile
+         zope.lifecycleevent.interfaces.IObjectRemovedEvent"
+    handler=".eventhandlers.delete_tile_of_tiles"
+    />
+
 
 </configure>
