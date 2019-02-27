@@ -1,5 +1,6 @@
-<div tal:attributes="class python:view.data['css_class'] + ' tiles_of_tiles'"
-     tal:define="title view/data/title|nothing">
+<div tal:attributes="class python:tileclass + ' tiles_of_tiles'"
+     tal:define="title view/data/title|nothing;
+                 tileclass python:view.data['css_class'] or ''">
     <div class="tile-container" 
          tal:attributes="style view/get_bg_style">
       <h3 class="tileTitle" tal:condition="python: title">${view/data/title}</h3>

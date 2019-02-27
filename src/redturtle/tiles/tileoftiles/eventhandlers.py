@@ -26,6 +26,11 @@ def delete_tile_of_tiles(tile, event):
     if not safe_hasattr(tile.context, 'tiles_list'):
         logger.info('Unable to delete this "tile of tiles" tiles list')
         return
+
+    if managerid not in tile.context.tiles_list:
+        logger.info('Tile of tiles it\'s probably empty; nothing to do')
+        return
+
     tiles_list = tile.context.tiles_list[managerid]
     tile_ids_to_delete = [(innertile['tile_type'], innertile['tile_id']) for innertile in tiles_list]
 
