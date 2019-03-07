@@ -6,22 +6,4 @@
     </value>
   </record>
 
-  <records prefix="plone.resources/tiles_of_tiles_resources"
-           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-    <value key="css">
-        <element>++plone++redturtle.tiles.tileoftiles/css/index.css</element>
-    </value>
-  </records>
-
-  <records prefix="plone.bundles/tiles_of_tiles_bundle"
-           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
-    <value key="enabled">True</value>
-    <value key="resources">
-      <element>tiles_of_tiles_resources</element>
-    </value>
-    <value key="compile">True</value>
-    <value key="csscompilation">++plone++redturtle.tiles.tileoftiles/css/index.css</value>
-    <value key="last_compilation">2019-11-26 00:00:00</value>
-  </records>
-
 </registry>
