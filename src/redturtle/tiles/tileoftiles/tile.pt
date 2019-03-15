@@ -5,10 +5,12 @@
     <div class="tile-container">
       <h2 class="tileTitle"
           tal:condition="title">${title}</h2>
-      <div class="pat-tiles-management"
-           tal:define="managerId view/id;
-                       managerId python: 'managerId_' + managerId"
-           data-pat-tiles-management="managerId:${managerId}" />
+      <div class="tileBody">
+        <div class="pat-tiles-management tiles-management"
+             tal:define="managerId view/id;
+                         managerId python: 'managerId_' + managerId"
+             data-pat-tiles-management="managerId:${managerId}" />
+      </div>
     </div>
 </div>
 
