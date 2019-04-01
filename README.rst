@@ -6,33 +6,9 @@
 redturtle.tiles.tileoftiles
 ===========================
 
-Tell me what your product does
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
+Tile that renders a tile manager.
+The rendered tile manager is the one from ``redturtle.tiles.management``, so this add-on only works with that manager, and does not work with Mosaic.
+This tile allows for more complicated layout using a rather simple tile manager.
 
 
 Installation
@@ -54,16 +30,8 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/redturtle.tiles.tileoftiles/issues
-- Source Code: https://github.com/collective/redturtle.tiles.tileoftiles
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+- Issue Tracker: https://github.com/RedTurtle/redturtle.tiles.tileoftiles/issues
+- Source Code: https://github.com/RedTurtle/redturtle.tiles.tileoftiles
 
 
 License
