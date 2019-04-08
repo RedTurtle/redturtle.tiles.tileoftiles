@@ -7,18 +7,21 @@ class TileOfTiles(tiles.PersistentTile):
     """
     """
 
-    def get_bg_style(self):
-        style = ""
-        bgcolor = self.data.get("background_color", None)
+    def get_style(self):
+        style = []
+        bgcolor = self.data.get("background_color") or ""
         if bgcolor:
-            style = "background-color: {}".format(bgcolor)
-        bgimage = self.data.get("background_image", None)
+            style.append("background-color: {}".format(bgcolor))
+        bgimage = self.data.get("background_image") or None
         if bgimage:
             b64 = base64.b64encode(bgimage.data)
-            style = 'background-image: url("data:image/png;base64,{}")'.format(
-                b64
+            style.append(
+                'background-image: url("data:image/png;base64,{}")'.format(b64)
             )
-        style = style + "; min-height: {}".format(
-            self.data.get("min_height", "20px")
+        color = self.data.get("text_color") or ""
+        if color:
+            style.append("color: {}".format(color))
+        style.append(
+            "min-height: {}".format(self.data.get("min_height") or "0")
         )
-        return style
+        return "; ".join(style)

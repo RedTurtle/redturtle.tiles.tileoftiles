@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-03-28 10:25+0000\n"
+"POT-Creation-Date: 2019-04-08 07:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "A tile showing a tile manager"
 msgstr ""
 
-#: ../interfaces.py:46
+#: ../interfaces.py:52
 msgid "Additional classes"
 msgstr ""
 
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Background color"
 msgstr ""
 
-#: ../interfaces.py:31
+#: ../interfaces.py:37
 msgid "Background image"
 msgstr ""
 
@@ -37,16 +37,24 @@ msgstr ""
 msgid "Installs the redturtle.tiles.tileoftiles add-on."
 msgstr ""
 
-#: ../interfaces.py:37
+#: ../interfaces.py:43
 msgid "Minimum height"
+msgstr ""
+
+#: ../interfaces.py:32
+msgid "Please set a hex code."
 msgstr ""
 
 #: ../interfaces.py:24
 msgid "Please set a hex code. This property will be overriden by the background image."
 msgstr ""
 
-#: ../interfaces.py:38
+#: ../interfaces.py:44
 msgid "Set a minimum height for the tile, in pixels. e.g. 200px"
+msgstr ""
+
+#: ../interfaces.py:31
+msgid "Text color"
 msgstr ""
 
 #: ../configure.zcml:49
@@ -57,11 +65,11 @@ msgstr ""
 msgid "Uninstalls the redturtle.tiles.tileoftiles add-on."
 msgstr ""
 
-#: ../interfaces.py:32
+#: ../interfaces.py:38
 msgid "Upload an image to be used as tile background"
 msgstr ""
 
-#: ../interfaces.py:47
+#: ../interfaces.py:53
 msgid "Write here a class or list of classes that will be added to the tile"
 msgstr ""
 

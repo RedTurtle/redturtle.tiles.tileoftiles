@@ -27,6 +27,12 @@ class ITileOfTiles(model.Schema):
         required=False,
     )
 
+    text_color = schema.TextLine(
+        title=_("Text color"),
+        description=_("Please set a hex code."),
+        required=False,
+    )
+
     background_image = NamedBlobFile(
         title=_("Background image"),
         description=_("Upload an image to be used as tile background"),
