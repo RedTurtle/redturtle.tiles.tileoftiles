@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added text color field
+  [pnicolli]
 
 
 1.0a1 (2019-04-01)
