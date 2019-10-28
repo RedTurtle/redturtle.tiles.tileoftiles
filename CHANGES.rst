@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
-------------------
+1.0 (2019-10-28)
+----------------
 
-- Nothing changed yet.
+- Update version to 1.0
+  [lucabel]
 
 
 1.0a2 (2019-05-08)
