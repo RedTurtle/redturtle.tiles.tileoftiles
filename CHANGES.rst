@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+1.0.1 (Unreleased)
+------------------
+
+- Previous release was incomplete and not pushed to pypi.
+  [cekk]
+
+
 1.0 (2019-10-28)
 ----------------
 
